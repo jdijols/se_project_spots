@@ -1,0 +1,92 @@
+.profile {
+  display: flex;
+  flex-direction: row;
+  padding: 34px 0 20px;
+  border-bottom: 1px solid rgba(33, 33, 33, 0.4);
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  line-height: 1;
+  letter-spacing: 0%;
+  color: rgb(33, 33, 33);
+}
+
+.profile__avatar {
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.profile__column {
+  display: flex;
+  flex-direction: column;
+  max-width: 420px;
+  margin-right: 20px;
+}
+
+.profile__name {
+  font-size: 32px;
+  margin: 0 0 12px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.profile__description {
+  font-size: 16px;
+  margin: 0;
+  opacity: 0.7;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.profile__edit-btn {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  color: rgb(33, 33, 33);
+  opacity: 0.7;
+  background-color: transparent;
+  border: none;
+  width: fit-content;
+  padding: 0;
+}
+
+.profile__edit-btn:hover {
+  opacity: 1;
+}
+
+.profile__add-btn {
+  margin-left: auto;
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 18px 32px;
+  gap: 8px;
+  color: rgb(252, 245, 229);
+  background-color: rgb(33, 33, 33);
+  border: none;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.profile__add-btn:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 880px) {
+  .profile__column {
+    max-width: 360px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .profile {
+    flex-direction: column;
+  }
+}
