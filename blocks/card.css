@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  /* Not Line height 1 to prevent clipping descender letters */
   line-height: 1.25;
 }
 .card__image {
