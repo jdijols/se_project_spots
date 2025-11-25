@@ -46,6 +46,7 @@
   background-color: transparent;
   border: none;
   padding: 0;
+  width: fit-content;
 }
 .profile__edit-btn:hover {
   opacity: 1;
