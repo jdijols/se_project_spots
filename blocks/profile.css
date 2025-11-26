@@ -47,6 +47,9 @@
   border: none;
   padding: 0;
   width: fit-content;
+  color: rgb(33, 33, 33);
+  -webkit-text-fill-color: rgb(33, 33, 33);
+  -webkit-appearance: none;
 }
 .profile__edit-btn:hover {
   opacity: 1;
