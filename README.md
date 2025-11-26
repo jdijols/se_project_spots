@@ -27,7 +27,7 @@ The entire interface is crafted to keep the user’s attention on the photograph
 
 ## 🌟 **Key Features**
 
-- Fully responsive  layout
+- Fully responsive layout
 - Grid‑based gallery of immersive photo cards
 - Modular structure using the **BEM methodology**
 - Lightweight, optimized images for performance
@@ -57,11 +57,21 @@ The project follows the official design file from Figma:
 
 ### Figma Layout Previews
 
-\----------------|------------------| |  |  |
-
----
+<table>
+  <tr>
+    <td><img src="./images/spots-figma-320px.png" alt="Spots mobile Figma layout" /></td>
+    <td><img src="./images/spots-figma-1440px.png" alt="Spots desktop Figma layout" /></td>
+  </tr>
+</table>
 
 ## 📸 **Showcase Preview**
+
+<table>
+  <tr>
+    <td><img src="./images/spots-deployed-mobile.png" alt="Spots deployed mobile screenshot" /></td>
+    <td><img src="./images/spots-deployed-desktop.png" alt="Spots deployed desktop screenshot" /></td>
+  </tr>
+</table>
 
 ---
 
@@ -69,7 +79,7 @@ The project follows the official design file from Figma:
 
 ### 🌐 **GitHub Pages Deployment**
 
-[https://jdijols.github.io/se\_project\_spots/](https://jdijols.github.io/se_project_spots/)
+[https://jdijols.github.io/se_project_spots/](https://jdijols.github.io/se_project_spots/)
 
 ### 🎥 **Project Pitch Video**
 
