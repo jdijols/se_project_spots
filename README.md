@@ -68,7 +68,7 @@ The project follows the official design file from Figma:
 
 <table>
   <tr>
-    <td><img src="./images/spots-deployed-mobile.png" alt="Spots deployed mobile screenshot" /></td>
+    <td><img src="./images/spots-deployed-mobile.jpeg" alt="Spots deployed mobile screenshot" /></td>
     <td><img src="./images/spots-deployed-desktop.png" alt="Spots deployed desktop screenshot" /></td>
   </tr>
 </table>
