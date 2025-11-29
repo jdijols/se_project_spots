@@ -74,7 +74,7 @@ The project follows the official design file from Figma:
 
 ### 🎥 **Project Pitch Video**
 
-Add my pitch video link here (YouTube).
+[Watch my demo video from Google Drive](https://drive.google.com/file/d/1SPqZ32z0QDQ7nZCZtjenfkbUHvACt-IO/view?usp=sharing)
 
 ---
 
