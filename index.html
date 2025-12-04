@@ -33,24 +33,8 @@
             class="profile__avatar"
           />
           <div class="profile__column">
-            <h1 class="profile__name">
-              Bessie Coleman
-              <!-- <span
-                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Itaque corrupti similique minus quae corporis perspiciatis eos,
-                porro mollitia nostrum eligendi in! Magni non optio officia
-                incidunt. Sed ad distinctio voluptates.</span
-              > -->
-            </h1>
-            <p class="profile__description">
-              Civil Aviator
-              <!-- <span
-                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Possimus, blanditiis, quaerat quis ipsam sint nam quibusdam vel
-                unde iusto amet cupiditate doloribus eos eveniet natus tempora
-                iste modi eius ad!</span
-              > -->
-            </p>
+            <h1 class="profile__name">Bessie Coleman</h1>
+            <p class="profile__description">Civil Aviator</p>
             <button type="button" class="profile__edit-btn">
               <img src="images/edit-icon.svg" alt="Edit Profile button" />Edit
               Profile
@@ -135,6 +119,60 @@
         </section>
       </main>
       <footer class="footer">2025 © Spots by Jason Dijols</footer>
+      <div class="modal">
+        <div class="modal__container">
+          <button type="button" class="modal__close-btn"></button>
+          <h2 class="modal__title">Edit profile</h2>
+          <form class="modal__form">
+            <label for="profile-name-input" class="modal__label"
+              >Name
+              <input
+                id="profile-name-input"
+                type="text"
+                class="modal__input"
+                placeholder="Type your name"
+              />
+            </label>
+            <label for="profile-description-input" class="modal__label"
+              >Description
+              <input
+                id="profile-description-input"
+                type="text"
+                class="modal__input"
+                placeholder="Describe yourself"
+              />
+            </label>
+            <button type="submit" class="modal__save-btn">Save</button>
+          </form>
+        </div>
+      </div>
+      <div class="modal modal_is-opened">
+        <div class="modal__container">
+          <button type="button" class="modal__close-btn"></button>
+          <h2 class="modal__title">New post</h2>
+          <form class="modal__form">
+            <label for="image-link-input" class="modal__label"
+              >Image link
+              <input
+                id="image-link-input"
+                type="url"
+                class="modal__input"
+                placeholder="Paste a link to the picture"
+              />
+            </label>
+            <label for="caption-input" class="modal__label"
+              >Caption
+              <input
+                id="caption-input"
+                type="text"
+                class="modal__input"
+                placeholder="Type your caption"
+              />
+            </label>
+            <button type="submit" class="modal__save-btn">Save</button>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>
