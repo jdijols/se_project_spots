@@ -54,7 +54,7 @@
 .profile__edit-btn:hover {
   opacity: 1;
 }
-.profile__add-btn {
+.profile__new-btn {
   margin-left: auto;
   margin-top: auto;
   display: flex;
@@ -67,7 +67,7 @@
   border-radius: 8px;
   white-space: nowrap;
 }
-.profile__add-btn:hover {
+.profile__new-btn:hover {
   opacity: 0.8;
 }
 
@@ -113,7 +113,7 @@
   .profile__description {
     margin: 0 0 32px;
   }
-  .profile__add-btn {
+  .profile__new-btn {
     margin: 20px 0 0;
     width: 100%;
     justify-content: center;
