@@ -15,12 +15,13 @@
 }
 .modal__container {
   position: relative;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   border-radius: 8px;
   padding: 32px 50px;
   max-width: 730px;
   width: 100%;
   margin: 10px 10px;
+  box-sizing: border-box;
 }
 .modal__close-btn {
   position: absolute;
@@ -36,6 +37,7 @@
   background-color: transparent;
   opacity: 0.4;
   padding: 0;
+  transition: opacity 0.3s ease;
 }
 .modal__close-btn:hover {
   opacity: 1;
@@ -68,19 +70,22 @@
   color: #21212166;
 }
 .modal__input:hover {
-  border-color: #212121;
+  border-color: rgb(33, 33, 33);
 }
 .modal__input:focus {
-  border-color: #212121;
+  border-color: rgb(33, 33, 33);
   outline: none;
 }
 .modal__save-btn {
-  background-color: #212121;
-  color: #fcf5e5;
+  background-color: rgb(33, 33, 33);
+  color: rgb(252, 245, 229);
   padding: 18px 32px;
   max-width: 156px;
   width: 100%;
   border-radius: 8px;
+}
+.modal__save-btn:hover {
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 1024px) {
