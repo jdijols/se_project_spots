@@ -50,6 +50,7 @@
   color: rgb(33, 33, 33);
   -webkit-text-fill-color: rgb(33, 33, 33);
   -webkit-appearance: none;
+  cursor: pointer;
 }
 .profile__edit-btn:hover {
   opacity: 1;
@@ -66,6 +67,7 @@
   border: none;
   border-radius: 8px;
   white-space: nowrap;
+  cursor: pointer;
 }
 .profile__new-btn:hover {
   opacity: 0.8;
