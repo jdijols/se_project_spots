@@ -4,17 +4,20 @@ const config = {
   submitButtonSelector: ".modal__save-btn",
   inactiveButtonClass: "modal__save-btn_disabled",
   inputErrorClass: "modal__input_type_error",
+  errorClass: "modal__error_visible"
 }
 
 const showInputError = (formElement, inputElement, errorMessage, config) => {
   const errorElement = formElement.querySelector(`#${inputElement.id}-error`);
   errorElement.textContent = errorMessage;
+  errorElement.classList.add(config.errorClass);
   inputElement.classList.add(config.inputErrorClass);
 };
 
 const hideInputError = (formElement, inputElement, config) => {
   const errorElement = formElement.querySelector(`#${inputElement.id}-error`);
   errorElement.textContent = "";
+  errorElement.classList.remove(config.errorClass);
   inputElement.classList.remove(config.inputErrorClass);
 };
 
