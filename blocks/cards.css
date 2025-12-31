@@ -1,5 +1,5 @@
 .cards {
-  margin-top: 20px;
+  padding: 20px 0 60px;
 }
 .cards__list {
   display: grid;

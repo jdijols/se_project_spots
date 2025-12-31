@@ -90,6 +90,19 @@
   border-color: rgb(33, 33, 33);
   outline: none;
 }
+.modal__input_type_error {
+  border: 1px solid rgba(255, 0, 0, 0.6);
+}
+.modal__input_type_error:hover {
+  border: 1px solid rgba(255, 0, 0, 1);
+}
+.modal__error {
+  display: block;
+  color: rgba(255, 0, 0, 0.6);
+  line-height: 1.1;
+  margin-top: 8px;
+;
+}
 .modal__save-btn {
   background-color: rgb(33, 33, 33);
   color: rgb(252, 245, 229);
@@ -99,7 +112,11 @@
   border-radius: 8px;
   cursor: pointer;
 }
-.modal__save-btn:hover {
+.modal__save-btn_disabled {
+  opacity: .5;
+  cursor: default;
+}
+.modal__save-btn:not(.modal__save-btn_disabled):hover {
   opacity: 0.8;
 }
 .modal__image-container {
