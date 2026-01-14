@@ -1,3 +1,6 @@
+import "./index.css";
+import { enableValidation, config, resetValidation, disableButton } from "../scripts/validation.js";
+
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
 const editProfileBtn = document.querySelector(".profile__edit-btn");
@@ -164,3 +167,5 @@ function closeOnEscape(evt) {
     if (openedModal) closeModal(openedModal);
   }
 }
+
+enableValidation(config);
