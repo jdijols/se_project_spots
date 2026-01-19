@@ -26,21 +26,35 @@
       </header>
       <main class="content">
         <section class="profile page__section">
-          <img
-            src="<%=require('./images/avatar.jpg')%>"
-            alt="Bessie Coleman avatar"
-            class="profile__avatar"
-          />
+          <div class="profile__avatar-container">
+            <button type="button" class="profile__avatar-btn">
+              <img
+                class="profile__avatar-btn-icon"
+                src="<%=require('./images/edit-icon_alt.svg')%>"
+                alt="Edit Avatar button"
+              />
+            </button>
+            <img
+              src="#"
+              alt="Avatar image"
+              class="profile__avatar"
+            />
+          </div>
           <div class="profile__column">
-            <h1 class="profile__name">Bessie Coleman</h1>
-            <p class="profile__description">Civil Aviator</p>
+            <h1 class="profile__name">...</h1>
+            <p class="profile__description">...</p>
             <button type="button" class="profile__edit-btn">
-              <img src="<%=require('./images/edit-icon.svg')%>" alt="Edit Profile button" />Edit
-              Profile
+              <img
+                src="<%=require('./images/edit-icon.svg')%>"
+                alt="Edit Profile button"
+              />Edit Profile
             </button>
           </div>
           <button type="button" class="profile__new-btn">
-            <img src="<%=require('./images/plus-icon.svg')%>" alt="New Post button" />New Post
+            <img
+              src="<%=require('./images/plus-icon.svg')%>"
+              alt="New Post button"
+            />New Post
           </button>
         </section>
         <section class="cards page__section">
@@ -90,7 +104,10 @@
                 maxlength="200"
                 required
               />
-              <span id="profile-description-input-error" class="modal__error"></span>
+              <span
+                id="profile-description-input-error"
+                class="modal__error"
+              ></span>
             </label>
             <button type="submit" class="modal__save-btn">Save</button>
           </form>
@@ -107,7 +124,7 @@
                 id="image-link-input"
                 class="modal__input"
                 name="description"
-                placeholder="Paste a link to the picture"
+                placeholder="Paste the link to an image"
                 type="url"
                 required
               />
@@ -119,7 +136,7 @@
                 id="caption-input"
                 class="modal__input"
                 name="caption"
-                placeholder="Type your caption"
+                placeholder="Include a caption"
                 type="text"
                 minlength="2"
                 maxlength="30"
@@ -139,6 +156,27 @@
           ></button>
           <img src="#" alt="" class="modal__image" />
           <p class="modal__caption"></p>
+        </div>
+      </div>
+      <div id="edit-avatar-modal" class="modal">
+        <div class="modal__container">
+          <button type="button" class="modal__close-btn"></button>
+          <h2 class="modal__title">Edit profile image</h2>
+          <form class="modal__form" id="edit-avatar-form" novalidate>
+            <label for="profile-avatar-input" class="modal__label"
+              >Image link
+              <input
+                id="profile-avatar-input"
+                class="modal__input"
+                name="avatar"
+                placeholder="Paste the link to an image"
+                type="url"
+                required
+              />
+              <span id="profile-avatar-input-error" class="modal__error"></span>
+            </label>
+            <button type="submit" class="modal__save-btn">Save</button>
+          </form>
         </div>
       </div>
     </div>
