@@ -10,7 +10,7 @@ class Api {
   }
 
   getAppInfo() {
-    return Promise.all([this.getInitialCards(), this.getUserInfo()]);
+    return Promise.all([this.getInitialPosts(), this.getUserInfo()]);
   }
 
   getUserInfo() {
@@ -19,13 +19,13 @@ class Api {
     }).then((res) => this._handleServerResponse(res));
   }
 
-  getInitialCards() {
+  getInitialPosts() {
     return fetch(`${this._baseUrl}/cards`, {
       headers: this._headers,
     }).then((res) => this._handleServerResponse(res));
   }
 
-  editAvatarInfo({ avatar }) {
+  editAvatarImage({ avatar }) {
     return fetch(`${this._baseUrl}/users/me/avatar`, {
       method: "PATCH",
       headers: this._headers,
@@ -43,6 +43,31 @@ class Api {
         name,
         about,
       }),
+    }).then((res) => this._handleServerResponse(res));
+  }
+
+  addNewPost({ link, name }) {
+    return fetch(`${this._baseUrl}/cards`, {
+      method: "POST",
+      headers: this._headers,
+      body: JSON.stringify({
+        link,
+        name,
+      }),
+    }).then((res) => this._handleServerResponse(res));
+  }
+
+  deletePost(cardId) {
+    return fetch(`${this._baseUrl}/cards/${cardId}`, {
+      method: "DELETE",
+      headers: this._headers,
+    }).then((res) => this._handleServerResponse(res));
+  }
+
+  togglePostLike(cardId, isLiked) {
+    return fetch(`${this._baseUrl}/cards/${cardId}/likes`, {
+      method: isLiked ? "DELETE" : "PUT",
+      headers: this._headers,
     }).then((res) => this._handleServerResponse(res));
   }
 }
