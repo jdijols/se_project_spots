@@ -129,21 +129,34 @@
   border: none;
   cursor: pointer;
 }
+.modal__button:hover {
+  opacity: 0.8;
+}
 .modal__button_disabled {
   opacity: 0.5;
   cursor: default;
 }
-.modal__button:not(.modal__button_disabled):hover {
-  opacity: 0.8;
+.modal__button_disabled:hover {
+  opacity: 0.5;
 }
 .modal__button_type_delete {
   color: rgba(33, 33, 33, 1);
   background-color: rgba(255, 101, 101, 1);
 }
+.modal__button_type_delete:hover {
+  background-color: rgba(255, 51, 51, 1);
+  opacity: 1;
+}
 .modal__button_type_cancel {
   color: rgba(33, 33, 33, 1);
   background-color: rgb(255, 255, 255);
   border: 1px solid rgba(33, 33, 33, 1);
+
+}
+.modal__button_type_cancel:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(33, 33, 33, 1);
+  opacity: 1;
 }
 .modal__image-container {
   position: relative;
