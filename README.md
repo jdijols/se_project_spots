@@ -59,8 +59,8 @@ The project follows the official design file from Figma:
 
 <table>
   <tr>
-    <td><img src="./images/spots-figma-320px.png" alt="Spots mobile Figma layout" /></td>
-    <td><img src="./images/spots-figma-1440px.png" alt="Spots desktop Figma layout" /></td>
+    <td><img src="./src/images/spots-figma-320px.png" alt="Spots mobile Figma layout" /></td>
+    <td><img src="./src/images/spots-figma-1440px.png" alt="Spots desktop Figma layout" /></td>
   </tr>
 </table>
 
