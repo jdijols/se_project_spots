@@ -59,8 +59,8 @@ The project follows the official design file from Figma:
 
 <table>
   <tr>
-    <td><img src="./images/spots-figma-320px.png" alt="Spots mobile Figma layout" /></td>
-    <td><img src="./images/spots-figma-1440px.png" alt="Spots desktop Figma layout" /></td>
+    <td><img src="./src/images/spots-figma-320px.png" alt="Spots mobile Figma layout" /></td>
+    <td><img src="./src/images/spots-figma-1440px.png" alt="Spots desktop Figma layout" /></td>
   </tr>
 </table>
 
@@ -74,7 +74,7 @@ The project follows the official design file from Figma:
 
 ### 🎥 **Project Pitch Video**
 
-[Watch my demo video from Google Drive](https://drive.google.com/file/d/1SPqZ32z0QDQ7nZCZtjenfkbUHvACt-IO/view?usp=sharing)
+[Watch my demo video here](https://www.loom.com/share/bfca4f986cde49a8a4e8c357508c04a1)
 
 ---
 
@@ -92,6 +92,11 @@ The project follows the official design file from Figma:
 images/
 /pages
     index.css
+    index.js
+/scripts
+  validation.js
+/utils
+  Api.js
 /vendor
     /fonts (Poppins)
     fonts.css
@@ -122,6 +127,8 @@ This project demonstrates my ability to:
 - Build accessible, responsive interfaces
 - Follow professional workflows using Git and GitHub
 - Deliver polished, portfolio‑ready UI work
+- Create and make api calls to a third party server
+- Show and hide UI components conditionally via JavaScript
 
 ---
 
